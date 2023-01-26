@@ -9,7 +9,7 @@ setuptools.setup(
     license='Creative Commons Attribution-Noncommercial-Share Alike license',
     entry_points={
         "console_scripts": [
-            "ecli=exchange_cli.main:parse",
+            "exchange=exchange_cli.main:parse",
         ]
     
     },

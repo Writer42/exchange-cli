@@ -13,5 +13,5 @@ setuptools.setup(
         ]
     
     },
-    install_requires=['aiohttp', 'asyncio'],
+    install_requires=['aiohttp', 'asyncio', 'argparse', 'rich'],
 )

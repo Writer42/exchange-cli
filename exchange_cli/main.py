@@ -1,6 +1,9 @@
 import argparse
 import asyncio
 
+from .columns import print_text_in_columns
+
+
 from .api import (
     get_currency_list,
     print_exchange_rate,
@@ -36,8 +39,8 @@ def parse():
 
     if args.command == "symbols":
         symbols_list = asyncio.run(get_currency_list())
-        for symbol in symbols_list:
-            print(symbol)
+        print_text_in_columns(symbols_list)
+        
 
     elif args.command == "convert":
         asyncio.run(print_exchange_rate(

@@ -2,8 +2,6 @@ import argparse
 import asyncio
 
 from .columns import print_text_in_columns
-
-
 from .api import (
     get_currency_list,
     print_exchange_rate,
